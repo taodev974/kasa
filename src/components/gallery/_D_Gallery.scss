@@ -1,8 +1,13 @@
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  img {
-    height: auto;
-    width: 150px;
-  }
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 25px;
+  padding: 2em;
+  gap: 1em;
+
+  // img {
+  //   height: 340px;
+  //   width: 340px;
+  // }
 }

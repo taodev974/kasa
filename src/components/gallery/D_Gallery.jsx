@@ -1,14 +1,12 @@
 import "./_D_Gallery.scss";
+import Card from "../card/card";
 import imageData from "../../data/logements.json";
 
 function D_Gallery() {
   return (
-    <div className="gallery">
+    <div className="gallery-grid">
       {imageData.map((item) => (
-        <div key={item.id} className="gallery-grid">
-          <img src={item.cover} alt={item.title} />
-          <p>{item.title}</p>
-        </div>
+        <Card key={item.id} cover={item.cover} title={item.title} />
       ))}
     </div>
   );
