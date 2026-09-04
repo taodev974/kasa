@@ -1,0 +1,20 @@
+.hero-content {
+  width: auto;
+  height: auto;
+  min-height: 150px;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 25px;
+  background-position: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/hero.jpg");
+  color: white;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
