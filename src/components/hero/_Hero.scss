@@ -1,6 +1,6 @@
 .hero-content {
   width: auto;
-  max-width: 1240px;
+  max-width: 1440px;
   height: auto;
   min-height: 150px;
   object-fit: contain;
@@ -11,11 +11,23 @@
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../../assets/hero.jpg");
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 48px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+
+  //  Tablette
+  @media screen and (max-width: 1024px) {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  /* Mobile Figma */
+  @media screen and (max-width: 375px) {
+    font-size: 24px;
+    font-weight: 700;
+  }
 }

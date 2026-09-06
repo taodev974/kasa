@@ -6,16 +6,15 @@ import Footer from "../../components/footer/footer";
 
 function D_Home() {
   return (
-    <>
+    <div>
       <div className="layout-d-home">
         <Header />
         <Hero />
         <D_Gallery />
       </div>
-      <br />
-      <br />
+
       <Footer />
-    </>
+    </div>
   );
 }
 

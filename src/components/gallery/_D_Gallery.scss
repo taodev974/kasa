@@ -1,10 +1,10 @@
 div {
-  max-width: 1140px;
+  max-width: 1440px;
   width: auto;
 
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     background-color: rgba(246, 246, 246, 1);
     border-radius: 25px;
     padding: 2em;
