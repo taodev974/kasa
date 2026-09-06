@@ -1,0 +1,80 @@
+.layout-404 {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  font-family: "Montserrat", sans-serif;
+
+  .d-404-error {
+    text-align: center;
+    color: #ff6060;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 85px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .d-404-error {
+      font-size: 180px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .d-404-error {
+      font-size: 120px;
+      margin-top: 45px;
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .d-404-error {
+      font-size: 96px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .msg-error {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .msg-error {
+      font-size: 27px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .msg-error {
+      font-size: 18px;
+    }
+  }
+
+  .d-404-lien-accueil {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: auto;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 2em;
+  }
+  @media screen and (max-width: 1024px) {
+    .d-404-lien-accueil {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .d-404-lien-accueil {
+      font-size: 14px;
+    }
+  }
+}
