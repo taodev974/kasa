@@ -11,6 +11,7 @@
   padding: 2em 0 0.2em 0;
   align-items: center;
   margin-top: 2em;
+  font-family: "Montserrat" sans-serif;
 
   div.d-logo {
     background-color: black;
@@ -18,11 +19,14 @@
     display: flex;
     justify-content: center;
     height: 40px;
+    @media screen and (max-width: 375px) {
+      height: 30px;
+    }
   }
   p {
     color: white;
     text-align: center;
-    font-family: "Montserra" sans-serif;
+    font-family: "Montserrat" sans-serif;
     font-size: 24px;
     font-weight: 500;
   }
@@ -37,7 +41,11 @@
     p {
       font-size: 12px;
       font-weight: 500;
-      width: fit-content;
     }
+  }
+}
+@media screen and (max-with: 375px) {
+  .footer {
+    padding: 1em 0 0.2em;
   }
 }

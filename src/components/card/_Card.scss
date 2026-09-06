@@ -36,14 +36,16 @@
     font-family: "Montserrat", sans-serif;
     z-index: 3;
   }
-  @media screen and (max-width: 375px) {
-    p {
-      font-size: 12px;
-    }
-  }
+
   @media screen and (max-width: 1024px) {
     p {
       font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    p {
+      font-size: 12px;
     }
   }
 }
