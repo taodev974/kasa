@@ -3,7 +3,7 @@ import Logo from "../logo/Logo";
 function Footer() {
   return (
     <div className="footer">
-      <Logo color="#ffffff" size="30" />
+      <Logo color="#ffffff" />
       <p>© 2020 Kasa. All rights reserved</p>
     </div>
   );

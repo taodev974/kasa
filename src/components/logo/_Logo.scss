@@ -2,4 +2,27 @@
   display: flex;
   align-items: end;
   gap: 2px;
+  height: 68px;
+  width: auto;
+
+  // tablette
+  @media screen and (max-width: 1024px) {
+    height: 40px;
+    width: auto;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 30px;
+    width: auto;
+  }
+}
+
+.letter-K {
+  height: 100%;
+}
+
+.letter-Groupe,
+.letter-S,
+.letter-A {
+  height: 75%;
 }

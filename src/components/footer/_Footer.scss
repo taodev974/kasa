@@ -17,6 +17,7 @@
     color: #ffffff;
     display: flex;
     justify-content: center;
+    height: 40px;
   }
   p {
     color: white;
@@ -24,5 +25,19 @@
     font-family: "Montserra" sans-serif;
     font-size: 24px;
     font-weight: 500;
+  }
+
+  @media screen and (max-width: 1024px) {
+    p {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      width: fit-content;
+    }
   }
 }
