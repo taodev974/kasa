@@ -1,0 +1,78 @@
+.dropdown {
+  background-color: #ff6060;
+  color: #ffffff;
+  border-radius: 10px 10px 5px 5px;
+  min-height: 52px;
+  text-align: left;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+
+  @media screen and (max-width: 1024px) {
+    min-height: 40px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 13px;
+    min-height: 30px;
+  }
+}
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 1em;
+  gap: 1em;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 15px;
+    min-height: 40px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 13px;
+    min-height: 30px;
+  }
+}
+.collapse-header img {
+  width: 24px;
+  height: 13.71px;
+  transition: transform 0.3s ease;
+
+  @media screen and (max-width: 1024px) {
+    width: 17px;
+    height: 10px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 10.29px;
+    height: 9.14px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 10.29px;
+    height: 9.14px;
+  }
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.collapse-content {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  background-color: #f6f6f6;
+  color: black;
+  padding: 0 20px;
+  border: 0px solid #ff6060;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 13px;
+  }
+}
