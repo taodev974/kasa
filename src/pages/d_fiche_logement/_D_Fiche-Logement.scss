@@ -1,0 +1,31 @@
+.layout-d-fiche-logement {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2em;
+}
+
+.title {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.location {
+  font-size: 18px;
+  color: black;
+}
