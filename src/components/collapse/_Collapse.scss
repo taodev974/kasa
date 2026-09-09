@@ -1,7 +1,6 @@
 .dropdown {
-  background-color: #ff6060;
   color: #ffffff;
-  border-radius: 10px 10px 5px 5px;
+
   min-height: 52px;
   text-align: left;
   width: 100%;
@@ -26,6 +25,8 @@
   font-weight: 600;
   padding: 0 1em;
   gap: 1em;
+  background-color: #ff6060;
+  border-radius: 10px 10px 10px 10px;
 
   @media screen and (max-width: 1024px) {
     font-size: 15px;
@@ -67,7 +68,7 @@
   background-color: #f6f6f6;
   color: black;
   padding: 0 20px;
-  border: 0px solid #ff6060;
+  border-radius: 0 0 5px 5px;
 
   @media screen and (max-width: 1024px) {
     font-size: 15px;
