@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.star-icon {
+  font-size: 26px;
+  height: 26px;
+}
+
+.star-icon.full path {
+  fill: #ff6060;
+}
+
+.star-icon.empty {
+  fill: #e3e3e3;
+}

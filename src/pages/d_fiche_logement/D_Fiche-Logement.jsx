@@ -31,12 +31,18 @@ function D_FicheLogement() {
           </div>
           <div className="host-rating">
             <Host name={logement.host.name} picture={logement.host.picture} />
-            <Rating />
+            <Rating value={logement.rating} />
           </div>
         </div>
         <div className="collapse">
-          <Collapse text={"Description"} content={logement.description} />
-          <Collapse text={"Équipements"} content={logement.equipments} />
+          <Collapse text="Description">
+            <p>{logement.description}</p>
+          </Collapse>
+          <Collapse text="Équipements">
+            {logement.equipments.map((eq, index) => (
+              <p key={index}>{eq}</p>
+            ))}
+          </Collapse>
         </div>
       </div>
     </>

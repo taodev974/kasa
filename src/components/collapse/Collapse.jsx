@@ -2,7 +2,7 @@ import "./_Collapse.scss";
 import { useState } from "react";
 import arrow from "../../assets/arrow-down.svg";
 
-function Collapse({ content, text }) {
+function Collapse({ text, children }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -12,13 +12,7 @@ function Collapse({ content, text }) {
         <img src={arrow} className={open ? "rotate" : ""} alt="arrow" />
       </div>
 
-      <div className={`collapse-content ${open ? "open" : ""}`}>
-        {Array.isArray(content) ? (
-          content.map((item, index) => <p key={index}>{item}</p>)
-        ) : (
-          <p>{content}</p>
-        )}
-      </div>
+      <div className={`collapse-content ${open ? "open" : ""}`}>{children}</div>
     </div>
   );
 }

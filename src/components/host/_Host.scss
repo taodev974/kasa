@@ -1,12 +1,15 @@
 .host {
   display: flex;
   gap: 1em;
+  justify-content: flex-end;
 }
 
 .host-name {
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
   font-family: 18px;
+  display: flex;
+  width: auto;
 }
 
 .host-img {

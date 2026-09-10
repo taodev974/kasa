@@ -67,16 +67,17 @@
   width: auto;
   background-color: #f6f6f6;
   color: black;
+  padding: 0 20px;
 
   border-radius: 0 0 5px 5px;
   max-height: 0;
   overflow: hidden;
 
   transition:
-    max-height 0.4s ease-in,
-    opacity 0.5s ease-in,
-    padding 0.4s ease-in;
-  padding: 0 20px;
+    max-height 0.4s ease-in-out,
+    opacity 0.4s ease-in-out,
+    padding 0.4s ease-in-out;
+
   @media screen and (max-width: 1024px) {
     font-size: 15px;
   }
