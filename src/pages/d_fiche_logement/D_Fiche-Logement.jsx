@@ -1,11 +1,11 @@
-import Header from "../../components/header/Header";
 import "./_D_Fiche-Logement.scss";
 import { useParams } from "react-router-dom";
 import logements from "../../data/logements.json";
 import Carousel from "../../components/carousel/Carousel";
-import Footer from "../../components/footer/Footer";
 import Collapse from "../../components/collapse/Collapse";
 import Tag from "../../components/tag/Tag";
+import Host from "../../components/host/Host";
+import Rating from "../../components/rating/Rating";
 
 function D_FicheLogement() {
   const { id } = useParams();
@@ -15,24 +15,30 @@ function D_FicheLogement() {
   return (
     <>
       <div className="layout-d-fiche-logement">
-        <Header />
         <Carousel pictures={logement.pictures} />
-        <p className="title">
-          {logement.title}
-          <br />
-          <span className="location">{logement.location}</span>
-        </p>
-        <div className="tags">
-          {logement.tags.map((tag, index) => (
-            <Tag key={index} text={tag} />
-          ))}
+        <div className="container-0">
+          <div className="container-info">
+            <p className="title">
+              {logement.title}
+              <br />
+              <span className="location">{logement.location}</span>
+            </p>
+            <div className="tags">
+              {logement.tags.map((tag, index) => (
+                <Tag key={index} text={tag} />
+              ))}
+            </div>
+          </div>
+          <div className="host-rating">
+            <Host name={logement.host.name} picture={logement.host.picture} />
+            <Rating />
+          </div>
         </div>
         <div className="collapse">
           <Collapse text={"Description"} content={logement.description} />
           <Collapse text={"Équipements"} content={logement.equipments} />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

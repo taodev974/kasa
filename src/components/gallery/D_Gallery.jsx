@@ -1,5 +1,5 @@
 import "./_D_Gallery.scss";
-import Card from "../card/card";
+import Card from "../card/Card";
 import logements from "../../data/logements.json";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function D_Gallery() {
           to={`/d_fiche-logement/${logement.id}`}
           className="card-link"
         >
-          <Card cover={logement.cover} logement={logement.title} />
+          <Card cover={logement.cover} title={logement.title} />
         </Link>
       ))}
     </div>

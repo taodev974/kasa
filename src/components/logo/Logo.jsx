@@ -1,6 +1,6 @@
 import "./_Logo.scss";
 
-function Logo({ color = "#FF6060", size = 48 }) {
+function Logo({ color = "#FF6060" }) {
   return (
     <div className="d-logo">
       <div className="letter-K">

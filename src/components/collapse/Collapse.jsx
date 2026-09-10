@@ -12,15 +12,13 @@ function Collapse({ content, text }) {
         <img src={arrow} className={open ? "rotate" : ""} alt="arrow" />
       </div>
 
-      {open && (
-        <div className="collapse-content">
-          {Array.isArray(content) ? (
-            content.map((item, index) => <p key={index}>{item}</p>)
-          ) : (
-            <p>{content}</p>
-          )}
-        </div>
-      )}
+      <div className={`collapse-content ${open ? "open" : ""}`}>
+        {Array.isArray(content) ? (
+          content.map((item, index) => <p key={index}>{item}</p>)
+        ) : (
+          <p>{content}</p>
+        )}
+      </div>
     </div>
   );
 }

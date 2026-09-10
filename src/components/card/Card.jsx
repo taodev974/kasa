@@ -1,4 +1,3 @@
-import imageData from "../../data/logements.json";
 import "./_Card.scss";
 
 function Card({ cover, title }) {

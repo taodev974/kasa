@@ -1,0 +1,17 @@
+.host {
+  display: flex;
+  gap: 1em;
+}
+
+.host-name {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-family: 18px;
+}
+
+.host-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
