@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   align-items: center;
   justify-content: center;
@@ -9,8 +9,11 @@ body {
 }
 
 #root {
-  width: 1440px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
 }

@@ -7,24 +7,33 @@ div {
   grid-template-columns: repeat(3, 1fr);
   background-color: rgba(246, 246, 246, 1);
   border-radius: 25px;
-  padding: 2em;
+  padding: 30px;
   gap: 2em;
+  margin: 0 a;
 }
 
 @media screen and (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 1em;
   }
 }
 
 @media screen and (max-width: 500px) {
   .gallery-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0;
+    background-color: white;
   }
 }
 
 @media screen and (max-width: 375px) {
   .gallery-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+    background-color: white;
   }
 }

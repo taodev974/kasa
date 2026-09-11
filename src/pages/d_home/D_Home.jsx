@@ -5,11 +5,9 @@ import heroImg from "../../assets/hero2.jpg";
 
 function D_Home() {
   return (
-    <div>
-      <div className="layout-d-home">
-        <Hero image={heroImg} text={"Chez vous, partout et ailleurs"} />
-        <D_Gallery />
-      </div>
+    <div className="layout-d-home">
+      <Hero image={heroImg} text={"Chez vous, partout et ailleurs"} />
+      <D_Gallery />
     </div>
   );
 }
