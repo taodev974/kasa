@@ -1,15 +1,15 @@
-import "./_D_Gallery.scss";
+import "./_Gallery.scss";
 import Card from "../card/Card";
 import logements from "../../data/logements.json";
 import { Link } from "react-router-dom";
 
-function D_Gallery() {
+function Gallery() {
   return (
     <div className="gallery-grid">
       {logements.map((logement) => (
         <Link
           key={logement.id}
-          to={`/d_fiche-logement/${logement.id}`}
+          to={`/housingDetails/${logement.id}`}
           className="card-link"
         >
           <Card cover={logement.cover} title={logement.title} />
@@ -19,4 +19,4 @@ function D_Gallery() {
   );
 }
 
-export default D_Gallery;
+export default Gallery;

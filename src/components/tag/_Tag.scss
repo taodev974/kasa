@@ -1,7 +1,15 @@
 .tags {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
+  gap: 1em;
+
+  @media screen and (max-width: 1024px) {
+    gap: 15px;
+  }
+
+  @media screen and (max-width: 375px) {
+    gap: 10px;
+  }
 }
 
 .tag {

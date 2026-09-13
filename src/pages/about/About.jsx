@@ -1,9 +1,9 @@
 import Hero from "../../components/hero/Hero";
-import "./_D_About.scss";
+import "./_About.scss";
 import aboutImg from "../../assets/about.jpg";
 import Collapse from "../../components/collapse/Collapse";
 
-function D_About() {
+function About() {
   return (
     <div className="layout-about">
       <Hero image={aboutImg} text={""} />
@@ -38,4 +38,4 @@ function D_About() {
   );
 }
 
-export default D_About;
+export default About;

@@ -38,12 +38,14 @@
   }
 
   @media screen and (max-width: 1024px) {
+    aspect-ratio: 4/3;
     p {
       font-size: 14px;
     }
   }
 
   @media screen and (max-width: 375px) {
+    aspect-ratio: 4 / 3;
     p {
       font-size: 12px;
     }

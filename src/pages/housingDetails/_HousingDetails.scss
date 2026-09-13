@@ -1,0 +1,151 @@
+.layout-d-fiche-logement {
+  width: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  padding: 40px;
+  font-family: "Montserrat", sans-serif;
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px 20px;
+    gap: 23px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
+    gap: 25px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 10px;
+    gap: 15px;
+  }
+}
+
+.carousel {
+  padding: 50px;
+  aspect-ratio: 16/9;
+}
+
+.tags div {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    font-weight: 600;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
+    font-weight: 500;
+    flex-wrap: nowrap;
+  }
+}
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2em;
+}
+
+.title {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  // padding-bottom: 0.5em;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.container-0 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+
+  @media screen and (max-width: 375px) {
+    gap: 0.5em;
+  }
+}
+
+.host-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+    font-weight: 500;
+    flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    font-weight: 500;
+    flex-direction: row-reverse;
+  }
+}
+
+.equip-list {
+  list-style: none;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.equip-list li {
+  padding: 2px 0;
+}

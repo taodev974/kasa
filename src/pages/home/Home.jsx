@@ -1,9 +1,9 @@
-import "./_D_Home.scss";
+import "./_Home.scss";
 import Hero from "../../components/hero/Hero";
-import D_Gallery from "../../components/gallery/D_Gallery";
+import D_Gallery from "../../components/gallery/Gallery";
 import heroImg from "../../assets/hero2.jpg";
 
-function D_Home() {
+function Home() {
   return (
     <div className="layout-d-home">
       <Hero image={heroImg} text={"Chez vous, partout et ailleurs"} />
@@ -12,4 +12,4 @@ function D_Home() {
   );
 }
 
-export default D_Home;
+export default Home;

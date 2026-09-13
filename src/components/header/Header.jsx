@@ -8,10 +8,10 @@ function Header() {
       <div className="header-content">
         <Logo />
         <nav>
-          <NavLink to="/d_home" className="nav-link">
+          <NavLink to="/home" className="nav-link">
             Accueil
           </NavLink>
-          <NavLink to="/d_about" className="nav-link">
+          <NavLink to="/about" className="nav-link">
             A Propos
           </NavLink>
         </nav>
