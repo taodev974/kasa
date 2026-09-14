@@ -16,20 +16,21 @@ function HousingDetails() {
     <>
       <div className="layout-d-fiche-logement">
         <Carousel pictures={logement.pictures} className="carousel" />
+
         <div className="container-0">
-          <div className="container-info">
-            <div className="title">{logement.title}</div>
-            <span className="location">{logement.location}</span>
+          <div className="title-location">
+            <h1>{logement.title}</h1>
+            <p className="location">{logement.location}</p>
+            <div className="tags">
+              {logement.tags.map((tag, index) => (
+                <Tag key={index} text={tag} />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="tags">
-          {logement.tags.map((tag, index) => (
-            <Tag key={index} text={tag} />
-          ))}
-        </div>
-        <div className="host-rating">
-          <Host name={logement.host.name} picture={logement.host.picture} />
-          <Rating value={logement.rating} className="rating" />
+          <div className="host-rating">
+            <Host name={logement.host.name} picture={logement.host.picture} />
+            <Rating value={logement.rating} className="rating" />
+          </div>
         </div>
         <div className="collapse">
           <Collapse text="Description">

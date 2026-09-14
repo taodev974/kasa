@@ -2,15 +2,17 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  // padding-bottom: 20px;
 }
 
 .star-icon {
-  // font-size: 36px;
   height: 36px;
 
   @media screen and (max-width: 1024px) {
-    height: 24px;
+    height: 26px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 20px;
   }
 
   @media screen and (max-width: 375px) {

@@ -4,8 +4,6 @@
   align-items: center;
   width: auto;
   height: 68px;
-  margin: 0 auto;
-
   flex-direction: row;
   padding: 45px 40px 0px 40px;
 
@@ -34,7 +32,6 @@
   @media screen and (max-width: 1024px) {
     nav {
       gap: 1em;
-      margin-left: 0;
     }
     .nav-link {
       font-weight: 500;
@@ -44,7 +41,6 @@
   @media screen and (max-width: 375px) {
     nav {
       gap: 1em;
-      margin-left: 0;
     }
     .nav-link {
       font-weight: 500;
