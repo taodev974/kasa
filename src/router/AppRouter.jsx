@@ -11,6 +11,7 @@ function AppRouter() {
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/housingDetails/:id" element={<HousingDetails />} />
+      <Route path="/not-found" element={<NotFound />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

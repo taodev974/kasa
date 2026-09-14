@@ -4,7 +4,6 @@ function Host({ name, picture }) {
   const parts = name.split(" ");
   const firstName = parts.slice(0, parts.length - 1).join(" ");
   const lastName = parts[parts.length - 1];
-  console.log(lastName);
 
   return (
     <div className="host">

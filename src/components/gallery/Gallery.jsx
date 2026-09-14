@@ -1,9 +1,9 @@
 import "./_Gallery.scss";
 import Card from "../card/Card";
-import logements from "../../data/logements.json";
+
 import { Link } from "react-router-dom";
 
-function Gallery() {
+function Gallery({ logements }) {
   return (
     <div className="gallery-grid">
       {logements.map((logement) => (

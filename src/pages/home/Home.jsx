@@ -1,13 +1,14 @@
 import "./_Home.scss";
 import Hero from "../../components/hero/Hero";
-import D_Gallery from "../../components/gallery/Gallery";
+import Gallery from "../../components/gallery/Gallery";
 import heroImg from "../../assets/hero2.jpg";
+import logements from "../../data/logements.json";
 
 function Home() {
   return (
     <div className="layout-d-home">
       <Hero image={heroImg} text={"Chez vous, partout et ailleurs"} />
-      <D_Gallery />
+      <Gallery logements={logements} />
     </div>
   );
 }
