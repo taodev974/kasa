@@ -1,4 +1,4 @@
-.layout-d-fiche-logement {
+.layout-fiche-logement {
   width: auto;
   max-width: 1440px;
   margin: 0 auto;
@@ -25,8 +25,7 @@
   }
 }
 
-.carousel {
-  padding: 50px;
+.layout-fiche-logement .carousel {
   aspect-ratio: 16/6;
 
   @media screen and (max-width: 1024px) {
@@ -46,12 +45,12 @@
   }
 }
 
-.tags {
+.layout-fiche-logement .tags {
   display: flex;
   align-items: end;
 }
 
-.tags div {
+.layout-fiche-logement .tags .tag {
   font-size: 14px;
   font-weight: 700;
   display: flex;
@@ -72,13 +71,14 @@
     padding: 0 1em;
   }
 }
-div.rating {
+
+.layout-fiche-logement .rating {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-.collapse {
+.layout-fiche-logement .collapse {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,7 +104,7 @@ div.rating {
   }
 }
 
-h1 {
+.layout-fiche-logement h1 {
   color: #ff6060;
   font-size: 36px;
   font-weight: 500;
@@ -129,7 +129,7 @@ h1 {
   }
 }
 
-.location {
+.layout-fiche-logement .location {
   font-size: 18px;
   font-weight: 500;
   color: black;
@@ -150,7 +150,7 @@ h1 {
   }
 }
 
-.container-0 {
+.layout-fiche-logement .container-0 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -168,11 +168,11 @@ h1 {
   }
 }
 
-div.container-info {
+.layout-fiche-logement div.container-info {
   height: fit-content;
 }
 
-.title-location {
+.layout-fiche-logement .title-location {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -187,22 +187,22 @@ div.container-info {
   }
 }
 
-p.location {
+.layout-fiche-logement p.location {
   padding: 0;
   margin: 0;
 }
 
-.tag-host-rating {
+.layout-fiche-logement .tag-host-rating {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.host {
+.layout-fiche-logement .host {
   width: auto;
 }
 
-.host-rating {
+.layout-fiche-logement .host-rating {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -242,12 +242,12 @@ p.location {
   }
 }
 
-.equip-list {
+.layout-fiche-logement .equip-list {
   list-style: none;
   padding: 1em 0;
   margin: 0;
 }
 
-.equip-list li {
+.layout-fiche-logement .equip-list li {
   padding: 2px 0;
 }

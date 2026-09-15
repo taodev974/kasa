@@ -9,7 +9,7 @@
   gap: 2em;
   font-family: "Montserrat", sans-serif;
 
-  .d-404-error {
+  .error-404 {
     text-align: center;
     color: #ff6060;
     font-size: 288px;
@@ -20,19 +20,19 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .d-404-error {
+    .error-404 {
       font-size: 180px;
     }
   }
   @media screen and (max-width: 500px) {
-    .d-404-error {
+    .error-404 {
       font-size: 120px;
       margin-top: 45px;
       margin-bottom: 10px;
     }
   }
   @media screen and (max-width: 375px) {
-    .d-404-error {
+    .error-404 {
       font-size: 96px;
       margin-top: 15px;
       margin-bottom: 10px;
@@ -58,7 +58,7 @@
     }
   }
 
-  .d-404-lien-accueil {
+  .lien-accueil-404 {
     text-align: center;
     text-decoration: none;
     color: black;
@@ -68,12 +68,12 @@
     margin-bottom: 2em;
   }
   @media screen and (max-width: 1024px) {
-    .d-404-lien-accueil {
+    .lien-accueil-404 {
       font-size: 16px;
     }
   }
   @media screen and (max-width: 375px) {
-    .d-404-lien-accueil {
+    .lien-accueil-404 {
       font-size: 14px;
     }
   }

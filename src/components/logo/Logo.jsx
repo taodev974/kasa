@@ -2,7 +2,7 @@ import "./_Logo.scss";
 
 function Logo({ color = "#FF6060" }) {
   return (
-    <div className="d-logo">
+    <div className="logo">
       <div className="letter-K">
         <svg
           width="100%"

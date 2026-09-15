@@ -11,10 +11,10 @@ import { Navigate } from "react-router-dom";
 function HousingDetails() {
   const { id } = useParams();
   const logement = logements.find((l) => l.id === id);
-  if (!logement) return <Navigate to="/NotFound" replace />;
+  if (!logement) return <Navigate to="/not-found" replace />;
 
   return (
-    <div className="layout-d-fiche-logement">
+    <div className="layout-fiche-logement">
       <Carousel pictures={logement.pictures} className="carousel" />
 
       <div className="container-0">

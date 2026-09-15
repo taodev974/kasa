@@ -6,7 +6,7 @@ import logements from "../../data/logements.json";
 
 function Home() {
   return (
-    <div className="layout-d-home">
+    <div className="layout-home">
       <Hero image={heroImg} text={"Chez vous, partout et ailleurs"} />
       <Gallery logements={logements} />
     </div>
