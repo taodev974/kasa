@@ -7,7 +7,11 @@ import logements from "../../data/logements.json";
 function Home() {
   return (
     <div className="layout-home">
-      <Hero image={heroImg} text={"Chez vous, partout et ailleurs"} />
+      <Hero
+        image={heroImg}
+        text={"Chez vous, partout et ailleurs"}
+        gradient="rgba(0,0,0,0.6)"
+      />
       <Gallery logements={logements} />
     </div>
   );
