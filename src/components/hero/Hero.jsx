@@ -2,7 +2,7 @@ import "./_Hero.scss";
 
 function Hero({ image, text, gradient = "rgba(0,0,0,0.6)" }) {
   const bg = gradient
-    ? `linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(${image})`
+    ? `linear-gradient(${gradient},${gradient}),url(${image})`
     : `url(${image})`;
 
   return (

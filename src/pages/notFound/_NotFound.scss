@@ -1,13 +1,26 @@
 .layout-404 {
-  width: 85%;
+  width: auto;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
   font-family: "Montserrat", sans-serif;
+  height: auto;
+  padding: 20px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 60px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 113px 0;
+  }
 
   .error-404 {
     text-align: center;
@@ -21,7 +34,7 @@
 
   @media screen and (max-width: 1024px) {
     .error-404 {
-      font-size: 180px;
+      font-size: 200px;
     }
   }
   @media screen and (max-width: 500px) {
@@ -60,7 +73,7 @@
 
   .lien-accueil-404 {
     text-align: center;
-    text-decoration: none;
+
     color: black;
     width: auto;
     font-weight: 500;

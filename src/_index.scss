@@ -10,17 +10,13 @@ body {
   min-width: 320px;
 }
 
-.layout-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
 #root {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (max-width: 1024px) {
     padding: 0 20px;

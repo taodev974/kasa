@@ -32,12 +32,23 @@
     .copyright {
       font-size: 18px;
       font-weight: 600;
+      width: 100%;
     }
   }
+  @media screen and (max-width: 768px) {
+    .copyright {
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+    }
+  }
+
   @media screen and (max-width: 375px) {
     .copyright {
       font-size: 12px;
       font-weight: 500;
+      height: 46px;
+      width: 133px;
     }
   }
 }

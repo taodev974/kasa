@@ -1,18 +1,28 @@
 .layout-about {
-  width: 85%;
+  width: auto;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 2em;
-  margin-bottom: 2em;
+  padding: 40px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 30px 0;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 19px 0;
+  }
 }
-.layout-about .dropdown-container {
+
+.layout-about .collapse {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: auto;
+  // max-height: 298px;
   padding: 0 100px;
   justify-content: center;
 
@@ -20,9 +30,9 @@
     padding: 0 60px;
   }
   @media screen and (max-width: 768px) {
-    padding: 0 40px;
+    padding: 0;
   }
   @media screen and (max-width: 375px) {
-    padding: 0 20px;
+    padding: 0;
   }
 }

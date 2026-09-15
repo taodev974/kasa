@@ -31,11 +31,14 @@
   @media screen and (max-width: 1024px) {
     font-size: 15px;
     min-height: 40px;
+    height: 40px;
   }
 
   @media screen and (max-width: 375px) {
     font-size: 13px;
     min-height: 30px;
+    padding: 10px;
+    height: 30px;
   }
 }
 .collapse-header img {
